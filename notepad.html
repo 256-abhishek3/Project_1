@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notepad</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <h2>Notepad</h2>
+    <h3>Tools</h3>
+    <div class="setup">
+        <select class="look" onchange="changeFont(this)">
+            <option value="Arial">Arial</option>
+            <option value="Sans-Serif">Sans-Serif</option>
+            <option value="Comic Sans MS">Comic Sans MS</option>
+            <option value="Times New Roman">Times New Roman</option>
+            <option value="Courier New">Courier New</option>
+            <option value="Verdana">Verdana</option>
+            <option value="Trebuchet MS">Trebuchet MS</option>
+            <option value="Arial Black">Arial Black</option>
+            <option value="Impact">Impact</option>
+            <option value="Bookman">Bookman</option>
+            <option value="Helvetica">Helvetica</option>
+            <option value="Garamond">Garamond</option>
+            <option value="Palatino">Palatino</option>
+            <option value="Georgia">Georgia</option>
+            <option value="Montrerrat">Montrerrat</option>
+        </select>
+        <select class="size" onchange="changeSize(this)">
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+            <option>11</option>
+            <option>12</option>
+            <option>14</option>
+            <option>16</option>
+            <option>18</option>
+            <option>20</option>
+            <option>22</option>
+            <option>24</option>
+            <option>26</option>
+            <option>28</option>
+            <option>36</option>
+            <option>42</option>
+            <option>46</option>
+            <option>48</option>
+            <option>50</option>
+            <option>56</option>
+            <option>62</option>
+            <option>70</option>
+        </select>
+        <input type="button" value="Bold" class="upper" onclick="Bold()">
+        <input type="button" value="Italic" class="upper" onclick="Italic()">
+        <input type="button" value="Underline" class="upper" onclick="Underline()">
+        <br><br>
+        <textarea placeholder="Enter Your Text Here...." id="content" rows="20" cols="150"></textarea>
+        <input type="reset" value="Clear" onclick="remove()" class="anormal">
+        <input type="reset" value="Reset" onclick="reset()" class="normal">
+</body>
+</html>
